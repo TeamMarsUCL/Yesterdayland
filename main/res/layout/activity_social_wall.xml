@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212"
+    tools:context=".SocialWallActivity">
+
+
+    <ScrollView
+        android:layout_width="411dp"
+        android:layout_height="674dp"
+        android:layout_marginTop="1dp"
+        android:background="#121212"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appbar_events">
+
+        <!-- - - - - - - - - - - - - - - - - - - -
+        The following code is attributable to Emrullah Lüleci, taken from:
+        https://android.jlelse.eu/android-card-view-edb905e67cd6
+        - - - - - - - - - - - - - - - - - - - - - -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FAFAFA"
+            android:orientation="vertical"
+            android:padding="@dimen/fab_margin">
+
+            <!-- PERFORMANCE 1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/author_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/fab_margin"
+                android:paddingBottom="10dp"
+                app:cardBackgroundColor="#F1F1F1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="268dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="113dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/concert" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_post1_author"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="author"
+                            android:textColor="#000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_post1_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="THIS IS CONTENT"
+                            android:textColor="#555" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingBottom="5dp">
+
+                        <ImageButton
+                            android:id="@+id/bt_like1"
+                            android:scaleType="centerInside"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="0dp"
+                            android:background="@android:color/transparent"
+                            android:padding="0dp"
+                            android:src="@drawable/heart_pressable" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- PERFORMANCE 2 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/performance_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/fab_margin"
+                android:paddingBottom="10dp"
+                app:cardBackgroundColor="#F1F1F1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="400dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="113dp"
+                        android:cropToPadding="true"
+                        android:requiresFadingEdge="vertical"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/concert2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_post2_author"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="AUTHOR"
+                            android:textColor="#000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_post2_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="THIS IS CONTENT"
+                            android:textColor="#555" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingBottom="5dp">
+
+                        <ImageButton
+                            android:id="@+id/bt_like2"
+                            android:scaleType="centerInside"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="0dp"
+                            android:background="@android:color/transparent"
+                            android:padding="0dp"
+                            android:src="@drawable/heart_pressable" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- PERFORMANCE 3 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/performance_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/fab_margin"
+                android:paddingBottom="10dp"
+                app:cardBackgroundColor="#F1F1F1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="268dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="113dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/concert3" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_post3_author"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="AUTHOR"
+                            android:textColor="#000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_post3_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="THIS IS CONTENT"
+                            android:textColor="#555" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingBottom="5dp">
+
+                        <ImageButton
+                            android:id="@+id/bt_like3"
+                            android:scaleType="centerInside"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="0dp"
+                            android:background="@android:color/transparent"
+                            android:padding="0dp"
+                            android:src="@drawable/heart_pressable" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- PERFORMANCE 4 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/performance_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/fab_margin"
+                android:paddingBottom="10dp"
+                app:cardBackgroundColor="#F1F1F1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="400dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="113dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/concert4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_post4_author"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="AUTHOR"
+                            android:textColor="#000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_post4_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="THIS IS CONTENT"
+                            android:textColor="#555" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingBottom="5dp">
+
+                        <ImageButton
+                            android:id="@+id/bt_like4"
+                            android:scaleType="centerInside"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="0dp"
+                            android:background="@android:color/transparent"
+                            android:padding="0dp"
+                            android:src="@drawable/heart_pressable" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- PERFORMANCE 5 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/performance_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/fab_margin"
+                android:paddingBottom="10dp"
+                app:cardBackgroundColor="#F1F1F1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="400dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="113dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/concert5" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_post5_author"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="AUTHOR"
+                            android:textColor="#000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_post5_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="THIS IS CONTENT"
+                            android:textColor="#555" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingBottom="5dp">
+
+                        <ImageButton
+                            android:id="@+id/bt_like5"
+                            android:scaleType="centerInside"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="0dp"
+                            android:background="@android:color/transparent"
+                            android:padding="0dp"
+                            android:src="@drawable/heart_pressable" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- PERFORMANCE 6 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/performance_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/fab_margin"
+                android:paddingBottom="10dp"
+                app:cardBackgroundColor="#F1F1F1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="400dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="113dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/concert6" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_post6_author"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="AUTHOR"
+                            android:textColor="#000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_post6_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="THIS IS CONTENT"
+                            android:textColor="#555" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="16dp"
+                        android:paddingBottom="5dp">
+
+                        <ImageButton
+                            android:id="@+id/bt_like6"
+                            android:scaleType="centerInside"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="0dp"
+                            android:background="@android:color/transparent"
+                            android:padding="0dp"
+                            android:src="@drawable/heart_pressable" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#A02052"
+            app:popupTheme="@style/AppTheme.PopupOverlay"></androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

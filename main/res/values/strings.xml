@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Yesterdayland</string>
+
+    <!-- - - - - - - - - - - - - -->
+    <!--Used by LoginPage -->
+    <!-- - - - - - - - - - - - - -->
+    <string name="welcome">Welcome</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="bt_login">Log in</string>
+    <string name="sign_up">Sign up</string>
+
+
+    <!-- - - - - - - - - - - - - -->
+    <!--Used by HomePageActivity -->
+    <!-- - - - - - - - - - - - - -->
+    <string name="header">Tomorrowland</string>
+    <string name="map">M</string>
+    <string name="social_wall">SW</string>
+    <string name="search">SRCH</string>
+    <string name="upcoming_events">UE</string>
+    <string name="top_up">TU</string>
+    <string name="contact_us">CU</string>
+    <string name="title_activity_map">Map</string>
+    <string name="title_activity_events">Events</string>
+
+
+    <!-- - - - - - - - - - - - - -->
+    <!--Used by HomePageActivity -->
+    <!-- - - - - - - - - - - - - -->
+
+</resources>

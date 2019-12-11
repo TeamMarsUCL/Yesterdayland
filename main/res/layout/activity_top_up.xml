@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TopUpActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="678dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <ImageView
+            android:id="@+id/flag"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tomorrowland"
+            android:tint="#5B000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appbar_events"
+            app:srcCompat="@drawable/main_concert" />
+
+        <TextView
+            android:id="@+id/tv_myAccount"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="192dp"
+            android:layout_marginBottom="466dp"
+            android:text="My Account"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="My Account" />
+
+        <TextView
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="258dp"
+            android:layout_marginBottom="432dp"
+            android:text="Balance:  £ "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="Balance:" />
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="195dp"
+            android:layout_marginBottom="432dp"
+            android:text="DateTime"
+            android:textSize="20sp"
+            tools:text="Artist" />
+
+        <Button
+            android:id="@+id/bt_topUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="275dp"
+            android:layout_marginBottom="223dp"
+            android:text="Top Up"
+            android:theme="@style/events_button" />
+
+        <EditText
+            android:id="@+id/et_amount_input"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="229dp"
+            android:layout_marginBottom="296dp"
+            android:ems="10"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="240dp"
+            android:layout_marginBottom="342dp"
+            android:text="Amount:"
+            android:textSize="20sp"
+            tools:text="Amount:" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#A02052"
+        app:popupTheme="@style/AppTheme.PopupOverlay"></androidx.appcompat.widget.Toolbar>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerformanceViewActivity">
+
+    <RelativeLayout
+        android:id="@+id/fl_events"
+        android:layout_width="match_parent"
+        android:layout_height="147dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/flag"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tomorrowland"
+            android:tint="#5B000000" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Upcoming Events"
+            android:textColor="#F8F4F4"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="528dp"
+        android:background="#4A181717"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fl_events">
+
+        <!-- - - - - - - - - - - - - - - - - - - -
+        The following code is attributable to Emrullah Lüleci, taken from:
+        https://android.jlelse.eu/android-card-view-edb905e67cd6
+        - - - - - - - - - - - - - - - - - - - - - -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FAFAFA"
+            android:orientation="vertical"
+            android:padding="@dimen/fab_margin">
+
+            <!-- PERFORMANCE 1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/performance_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/fab_margin"
+                android:paddingBottom="10dp"
+                app:cardBackgroundColor="#F1F1F1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="268dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="113dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/concert" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_performance1_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="HELLO WORLD"
+                            android:textColor="#000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_performance1_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="THIS IS CONTENT"
+                            android:textColor="#555" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <Button
+                            android:id="@+id/bt_expand_performance1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="0dp"
+                            android:padding="0dp"
+                            android:text="More Info"
+                            android:theme="@style/events_button" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- PERFORMANCE 2 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/performance_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/fab_margin"
+                android:paddingBottom="10dp"
+                app:cardBackgroundColor="#F1F1F1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="400dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="113dp"
+                        android:cropToPadding="true"
+                        android:requiresFadingEdge="vertical"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/concert2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_performance2_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="HELLO WORLD"
+                            android:textColor="#000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_performance2_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="THIS IS CONTENT"
+                            android:textColor="#555" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <Button
+                            android:id="@+id/bt_expand_performance2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="More Info"
+                            android:theme="@style/events_button" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- PERFORMANCE 3 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/performance_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/fab_margin"
+                android:paddingBottom="10dp"
+                app:cardBackgroundColor="#F1F1F1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="268dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="113dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/concert3" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_performance3_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="HELLO WORLD"
+                            android:textColor="#000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_performance3_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="THIS IS CONTENT"
+                            android:textColor="#555" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <Button
+                            android:id="@+id/bt_expand_performance3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="More Info"
+                            android:theme="@style/events_button" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- PERFORMANCE 4 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/performance_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/fab_margin"
+                android:paddingBottom="10dp"
+                app:cardBackgroundColor="#F1F1F1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="400dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="113dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/concert4" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_performance4_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="HELLO WORLD"
+                            android:textColor="#000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_performance4_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="THIS IS CONTENT"
+                            android:textColor="#555" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <Button
+                            android:id="@+id/bt_expand_performance4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="More Info"
+                            android:theme="@style/events_button" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- PERFORMANCE 5 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/performance_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/fab_margin"
+                android:paddingBottom="10dp"
+                app:cardBackgroundColor="#F1F1F1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="400dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="113dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/concert5" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_performance5_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="HELLO WORLD"
+                            android:textColor="#000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_performance5_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="THIS IS CONTENT"
+                            android:textColor="#555" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/bt_expand_performance5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="More Info"
+                            android:theme="@style/events_button" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- PERFORMANCE 6 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/performance_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/fab_margin"
+                android:paddingBottom="10dp"
+                app:cardBackgroundColor="#F1F1F1"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="8dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="400dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="113dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/concert6" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/tv_performance6_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="HELLO WORLD"
+                            android:textColor="#000"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tv_performance6_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="THIS IS CONTENT"
+                            android:textColor="#555" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <Button
+                            android:id="@+id/bt_expand_performance6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="More Info"
+                            android:theme="@style/events_button" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_events"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#A02052"
+            app:popupTheme="@style/AppTheme.PopupOverlay"></androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailPerformanceActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="678dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <ImageView
+            android:id="@+id/flag"
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/tomorrowland"
+            android:tint="#5B000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appbar_events"
+            app:srcCompat="@drawable/main_concert" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="187dp"
+            android:layout_marginBottom="466dp"
+            android:text="TextView"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="TITLE" />
+
+        <TextView
+            android:id="@+id/tv_datetime"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="187dp"
+            android:layout_marginBottom="382dp"
+            android:text="DateTime"
+            android:textSize="18sp"
+            tools:text="DateTime" />
+
+        <TextView
+            android:id="@+id/tv_venue"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="187dp"
+            android:layout_marginBottom="354dp"
+            android:text="DateTime"
+            android:textSize="18sp"
+            tools:text="Venue" />
+
+        <TextView
+            android:id="@+id/tv_artist"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="187dp"
+            android:layout_marginBottom="434dp"
+            android:text="DateTime"
+            android:textSize="20sp"
+            tools:text="Artist" />
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="314dp"
+            android:layout_height="127dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="188dp"
+            android:text="DateTime"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            tools:text="LongDescription" />
+
+        <Button
+            android:id="@+id/bt_attend"
+            android:theme="@style/events_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="277dp"
+            android:layout_marginBottom="108dp"
+            android:text="Attend" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#A02052"
+            app:popupTheme="@style/AppTheme.PopupOverlay"></androidx.appcompat.widget.Toolbar>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
